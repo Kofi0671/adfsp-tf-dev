@@ -1,0 +1,10 @@
+{
+	"name": "companyacount_pipeline",
+	"properties": {
+		"description": "copy CSV file from onprem to Azure SQL",
+		"folder": {
+			"name": "companyaccount"
+		},
+		"annotations": []
+	}
+}
