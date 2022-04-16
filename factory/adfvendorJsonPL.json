@@ -1,0 +1,9 @@
+{
+	"name": "adfvendorJsonPL",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e81c49f5-86f8-45d9-9168-617571ba6355",
+		"tenantId": "617cf81f-6e74-4a81-9218-009db0683b8a"
+	}
+}
