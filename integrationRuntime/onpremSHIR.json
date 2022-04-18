@@ -1,6 +1,7 @@
 {
 	"name": "onpremSHIR",
 	"properties": {
-		"type": "SelfHosted"
+		"type": "SelfHosted",
+		"description": "daf pipeline to land data into Avizzor Data Lake storage"
 	}
 }
