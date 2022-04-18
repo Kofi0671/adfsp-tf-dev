@@ -17,9 +17,9 @@
 		"annotations": [],
 		"type": "FileServer",
 		"typeProperties": {
-			"host": "Data",
+			"host": "@{linkedService().Host}",
 			"userId": "Administrator-PJS",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0MTU4NDFkNi1mYTRkLTQ1N2YtYTUzYi02OWU0NmQ0YjU0MTYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIzZTEyNWRkZC1jNmU5LTQ5NmYtYTlhNC05ZDIyNzA2NmI5NDkiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "onpremSHIR",
