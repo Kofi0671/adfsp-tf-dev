@@ -1,0 +1,29 @@
+{
+	"name": "LS_json_FileServer",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "LS for json dataset",
+		"parameters": {
+			"Host": {
+				"type": "string"
+			},
+			"userid": {
+				"type": "string"
+			},
+			"password": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "Data",
+			"userId": "Administrator-PJS",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0MTU4NDFkNi1mYTRkLTQ1N2YtYTUzYi02OWU0NmQ0YjU0MTYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "onpremSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
