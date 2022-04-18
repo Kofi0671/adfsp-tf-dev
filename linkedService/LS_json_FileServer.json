@@ -12,6 +12,10 @@
 			},
 			"password": {
 				"type": "string"
+			},
+			"jsondataset": {
+				"type": "String",
+				"defaultValue": "Data"
 			}
 		},
 		"annotations": [],
@@ -19,7 +23,7 @@
 		"typeProperties": {
 			"host": "@{linkedService().Host}",
 			"userId": "Administrator-PJS",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIzZTEyNWRkZC1jNmU5LTQ5NmYtYTlhNC05ZDIyNzA2NmI5NDkiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjOTgyZjVjOC1hOTc4LTQwM2MtYjA0NS02ZTg4MmQ4NWQyYTAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "onpremSHIR",
