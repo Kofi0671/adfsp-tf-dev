@@ -35,6 +35,12 @@
 			"Subscription": {
 				"type": "String",
 				"defaultValue": "c58b4c58-28bc-46ee-8ded-f21f54f99960"
+			},
+			"Directory": {
+				"type": "string"
+			},
+			"Filepath": {
+				"type": "string"
 			}
 		},
 		"annotations": [],

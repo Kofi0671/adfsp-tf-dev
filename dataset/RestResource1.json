@@ -3,7 +3,43 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_RestService1",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"BaseURL": {
+					"value": "@dataset().BaseURL",
+					"type": "Expression"
+				},
+				"Authenticationtype": {
+					"value": "@dataset().Authenticationtype",
+					"type": "Expression"
+				},
+				"Username": {
+					"value": "@dataset().Username",
+					"type": "Expression"
+				},
+				"Password": {
+					"value": "@dataset().Username",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"BaseURL": {
+				"type": "String",
+				"defaultValue": "https://jsonplaceholder.typicode.com/albums"
+			},
+			"Authenticationtype": {
+				"type": "String",
+				"defaultValue": "Acount Key"
+			},
+			"Username": {
+				"type": "String",
+				"defaultValue": "gbb"
+			},
+			"Password": {
+				"type": "String",
+				"defaultValue": "Admin123"
+			}
 		},
 		"annotations": [],
 		"type": "RestResource",

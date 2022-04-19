@@ -67,7 +67,12 @@
 				"inputs": [
 					{
 						"referenceName": "RestResource1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"BaseURL": "https://jsonplaceholder.typicode.com/albums",
+							"Authenticationtype": "Acount Key",
+							"Username": "gbb"
+						}
 					}
 				],
 				"outputs": [
@@ -89,6 +94,14 @@
 							},
 							"Subscription": {
 								"value": "@pipeline().parameters.Subscription",
+								"type": "Expression"
+							},
+							"Directory": {
+								"value": "@pipeline().parameters.Directory",
+								"type": "Expression"
+							},
+							"Filepath": {
+								"value": "@pipeline().parameters.Filepath",
 								"type": "Expression"
 							}
 						}
@@ -112,6 +125,13 @@
 			"Subscription": {
 				"type": "String",
 				"defaultValue": "c58b4c58-28bc-46ee-8ded-f21f54f99960"
+			},
+			"Directory": {
+				"type": "String",
+				"defaultValue": "inbound"
+			},
+			"Filepath": {
+				"type": "String"
 			}
 		},
 		"variables": {
