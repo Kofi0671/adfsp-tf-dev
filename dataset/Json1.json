@@ -7,7 +7,8 @@
 		},
 		"parameters": {
 			"Directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "inbound"
 			},
 			"FilePath": {
 				"type": "string"
