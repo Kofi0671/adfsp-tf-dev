@@ -75,6 +75,10 @@
 						"referenceName": "LS_Rest_API_JsonDet",
 						"type": "DatasetReference",
 						"parameters": {
+							"LS_DestDataset": {
+								"value": "@pipeline().parameters.sinkDS",
+								"type": "Expression"
+							},
 							"LSName": "LS_AzureBlobStorage1",
 							"Authenticationtype": "Account key",
 							"Subscription": "c58b4c58-28bc-46ee-8ded-f21f54f99960"
