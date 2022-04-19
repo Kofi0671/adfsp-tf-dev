@@ -19,7 +19,14 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "KSP_ACK_ClaimsPatientsjson04152022.json",
-				"container": "inbound"
+				"folderPath": {
+					"value": "@dataset().Directory",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().FilePath",
+					"type": "Expression"
+				}
 			}
 		},
 		"schema": {
