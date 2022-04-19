@@ -3,13 +3,47 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_AzureBlobStorage1",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"LSName": {
+					"value": "@dataset().LSName",
+					"type": "Expression"
+				},
+				"Athenticationtype": {
+					"value": "@dataset().Authenticationtype",
+					"type": "Expression"
+				},
+				"Subscription": {
+					"value": "@dataset().Subscription",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"LS_DestDataset": {
+				"type": "string",
+				"defaultValue": "RestApi"
+			},
+			"LSName": {
+				"type": "String",
+				"defaultValue": "LS_AzureBlobStorage1"
+			},
+			"Authenticationtype": {
+				"type": "String",
+				"defaultValue": "Account key"
+			},
+			"Subscription": {
+				"type": "String",
+				"defaultValue": "c58b4c58-28bc-46ee-8ded-f21f54f99960"
+			}
 		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation"
+				"type": "AzureBlobStorageLocation",
+				"fileName": "albums",
+				"container": "outbound"
 			}
 		},
 		"schema": {}
