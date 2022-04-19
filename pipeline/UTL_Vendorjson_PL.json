@@ -51,6 +51,14 @@
 				]
 			}
 		],
+		"parameters": {
+			"Directory": {
+				"type": "string"
+			},
+			"FilePath": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "HWUTIL"
 		},
