@@ -76,7 +76,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"LS_DestDataset": {
-								"value": "@pipeline().parameters.sinkDS",
+								"value": "@pipeline().parameters.LS_DestDataset",
 								"type": "Expression"
 							},
 							"LSName": "LS_AzureBlobStorage1",
@@ -88,8 +88,9 @@
 			}
 		],
 		"parameters": {
-			"sinkDS": {
-				"type": "string"
+			"LS_DestDataset": {
+				"type": "String",
+				"defaultValue": "LS_DestDataset"
 			}
 		},
 		"variables": {
