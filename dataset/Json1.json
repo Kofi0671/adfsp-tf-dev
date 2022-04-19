@@ -1,0 +1,46 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Json",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Directory": {
+				"type": "string"
+			},
+			"FilePath": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "KSP_ACK_ClaimsPatientsjson04152022.json",
+				"container": "inbound"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"VendorID": {
+					"type": "integer"
+				},
+				"Vendor": {
+					"type": "string"
+				},
+				"VendorAddress": {
+					"type": "string"
+				},
+				"City": {
+					"type": "string"
+				},
+				"Phone": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
