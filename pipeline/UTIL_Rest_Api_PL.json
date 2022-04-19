@@ -79,9 +79,18 @@
 								"value": "@pipeline().parameters.LS_DestDataset",
 								"type": "Expression"
 							},
-							"LSName": "LS_AzureBlobStorage1",
-							"Authenticationtype": "Account key",
-							"Subscription": "c58b4c58-28bc-46ee-8ded-f21f54f99960"
+							"LSName": {
+								"value": "@pipeline().parameters.LSName",
+								"type": "Expression"
+							},
+							"Authenticationtype": {
+								"value": "@pipeline().parameters.Athenticationtype",
+								"type": "Expression"
+							},
+							"Subscription": {
+								"value": "@pipeline().parameters.Subscription",
+								"type": "Expression"
+							}
 						}
 					}
 				]
@@ -91,6 +100,18 @@
 			"LS_DestDataset": {
 				"type": "String",
 				"defaultValue": "LS_DestDataset"
+			},
+			"LSName": {
+				"type": "String",
+				"defaultValue": "LS_AzureBlobStorage1"
+			},
+			"Athenticationtype": {
+				"type": "String",
+				"defaultValue": "Account type"
+			},
+			"Subscription": {
+				"type": "String",
+				"defaultValue": "c58b4c58-28bc-46ee-8ded-f21f54f99960"
 			}
 		},
 		"variables": {
