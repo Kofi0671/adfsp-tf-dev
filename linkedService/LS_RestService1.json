@@ -1,0 +1,34 @@
+{
+	"name": "LS_RestService1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "LS for Rest Api",
+		"parameters": {
+			"BaseURL": {
+				"type": "string"
+			},
+			"Authenticationtype": {
+				"type": "string"
+			},
+			"Username": {
+				"type": "string"
+			},
+			"Password": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://jsonplaceholder.typicode.com/albums",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Basic",
+			"userName": "gbb",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiOGI0ODcyMi0xMDM5LTQwMGMtOTc0MC0wMWMxMTBmYmU0YjMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "onpremSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
